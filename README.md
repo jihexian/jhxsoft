@@ -16,7 +16,7 @@
 
 小程序：1. 扫描二维码
 
-![小程序](https://gitee.com/wsyone/dashboard/attach_files/405331/download)
+![小程序](https://image.jihexian.com/20200224/4zFvTc18pETE6rQDDeaHEveuXTxsXdXUraVbkM5D.jpg)
 
 ​		2. 搜索小程序 几何线
 
@@ -43,35 +43,35 @@ http://help.jihexian.com/
 
 ### 1. 后台基本设置
 
-![基本设置](https://gitee.com/wsyone/jhxsoft/blob/master/doc/images/base.jpg)
+![基本设置](https://www.jihexian.com/doc/images/base.jpg)
 
 ### 2. 商品发布
 
-![商品上架](https://gitee.com/wsyone/jhxsoft/blob/master/doc/images/goods_add.jpg)
+![商品上架](https://www.jihexian.com/doc/images/goods_add.jpg)
 
 ### 3. 商品列表
 
-![商品列表](https://gitee.com/wsyone/jhxsoft/blob/master/doc/images/goods.jpg)
+![商品列表](https://www.jihexian.com/doc/images/goods.jpg)
 
 ### 4. 应用插件
 
-![插件](https://gitee.com/wsyone/jhxsoft/blob/master/doc/images/plugin.jpg)
+![插件](https://www.jihexian.com/doc/images/plugin.jpg)
 
 ### 5. 模块管理
 
-![模块](https://gitee.com/wsyone/jhxsoft/blob/master/doc/images/module.jpg)
+![模块](https://www.jihexian.com/doc/images/module.jpg)
 
 ### 6. 订单管理
 
-![订单管理](https://gitee.com/wsyone/jhxsoft/blob/master/doc/images/order.jpg)
+![订单管理](https://www.jihexian.com/doc/images/order.jpg)
 
 ### 7. 统计分析
 
-![统计分析](https://gitee.com/wsyone/jhxsoft/blob/master/doc/images/tongji.jpg)
+![统计分析](https://www.jihexian.com/doc/images/tongji.jpg)
 
 ### 8. 小程序截图
 
-![小程序截图](https://gitee.com/wsyone/jhxsoft/blob/master/doc/images/mini.jpg "小程序截图")
+![小程序截图](https://www.jihexian.com/doc/images/mini.jpg "小程序截图")
 
 
 
