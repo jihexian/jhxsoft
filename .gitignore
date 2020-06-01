@@ -1,0 +1,54 @@
+# phpstorm project files
+.idea
+*.data
+*.php-tmp
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# composer vendor dir
+vendor/
+web/storage/upload/
+web/assets/
+web/admin/assets
+
+
+
+# composer itself is not needed
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
+.env
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+/phpunit.xml
+
+# redis
+dump.rdb
+cache/
+web/storage/
+web/assets/
+web/admin/assets/
+.phpintel/
+web/
+seller/runtime/
+yjupgrade
+vendor/
+# env
+#.env
+seller/runtime/
+plugins/alipayMobile/tmp/
+plugins/alipayMobile/log.txt
+composer.lock
+
+
+
