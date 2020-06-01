@@ -53,7 +53,7 @@ http://help.jihexian.com/
 | 标准型存储容量 |200GB	  |1年	171元|
 | 下行流量      | 500GB	  |3个月	177元|
 
-[抢购地址：https://cloud.tencent.com](https://url.cn/onlpnfPE)
+[抢购地址：https://cloud.tencent.com](https://url.cn/JXnBEeOi)  
 
 ## 相关截图
 
