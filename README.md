@@ -7,6 +7,8 @@
 ## 项目链接
 后台：https://gitee.com/wsyone/jhxsoft
 
+h5/微信公众号版：https://gitee.com/wsyone/jhxsoft
+
 小程序：https://gitee.com/wsyone/jhxshop-single
 
 ## 演示地址
@@ -37,6 +39,21 @@
 请仔细阅wiki当中的文档
 
 http://help.jihexian.com/
+
+
+## 服务器推荐配置
+
+| 名称        | CPU    |  内存  |  硬盘  |  价格  |
+| --------    | -----:   | :----: | :----: | :----: |
+| 服务器(标准型S2机型 5M 双机)       | 2核      |   8G    |   50G    |   2970元/三年    |
+| MySQL高可用版| 1核      |   1G    |   100G    | 423元/三年    |
+
+| COS资源包     | 大小     |  价格     |
+| --------     | -----:   | :----:   |
+| 标准型存储容量 |200GB	  |1年	171元|
+| 下行流量      | 500GB	  |3个月	177元|
+
+[抢购地址：https://cloud.tencent.com](https://url.cn/oce242AT)
 
 ## 相关截图
 
@@ -77,7 +94,7 @@ http://help.jihexian.com/
 
 ## 提交反馈
 
-- QQ群：186395263
+- QQ群：186395263  [点击加入](http://shang.qq.com/wpa/qunwpa?idkey=0b70447a4e376c39e302c369172bfb0ea800251c50cdc450d94b3bfc0f08923b)
 
 
 ### 版权信息
