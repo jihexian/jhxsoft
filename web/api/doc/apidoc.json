@@ -1,0 +1,11 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "api接口",
+  "title": "api接口",
+  "url" : "http://www.jihexian.com/api",
+  "sampleUrl": "http://www.jihexian.com/api",
+  "template": {
+    "withGenerator": false
+  }
+}

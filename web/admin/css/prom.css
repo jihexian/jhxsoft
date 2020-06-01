@@ -1,0 +1,65 @@
+li{list-style-type:none}
+.clearfix:after{　　　
+	content:"";//设置内容为空
+    height:0;//高度为0
+	line-height:0;//行高为0
+	display:block;//将文本转为块级元素
+	visibility:hidden;//将元素隐藏
+	clear:both//清除浮动
+}
+.clearfix{
+	zoom:1;为了兼容IE
+}
+.sku-box{margin:10px 15px 5px 0;}
+.sku-items{
+    border:1px solid #e6e6e6;
+    padding:5px 12px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+}
+.sku-box .active{
+    background-color: #ced3e4;
+}
+.prom{
+	padding:0 50px;
+}
+.prom input,.prom textarea,.prom select{
+	width: 1000px;
+}
+
+.prom-product{
+    margin:20px 0;
+}
+.prom-product-l{
+    padding:0;
+    text-align: left!important;
+}
+.prom-product-r .name{
+    border:1px solid #ddd;
+    padding:0px 15px;
+    width: 380px;
+    height: 34px;
+    line-height: 34px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 5px;
+}
+.prom-product-r .img-box{
+    width: 168px;
+    height: 168px;
+    border:1px solid #ddd;
+    margin:10px 0
+}
+.prom-product-r .ncap-btn{
+	background-color:#e4eef5;
+	padding:5px 10px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+.prom-product-r .name-col{
+	color: #0b5aa0;
+}

@@ -1,0 +1,112 @@
+
+<!-- saved from url=(0091)https://file.xiaokeduo.com/system/StoreAdmin/Clients/Freights/View/FreightTemplateList.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><div ng-controller="ListController">
+    <div class="nav-box mb20">
+        <div class="table-page clearfix">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation"><a href="https://file.xiaokeduo.com/PickUpInfo/Index">上门自提</a></li>
+                <li role="presentation" class="active"><a href="javascript:">物流配送</a></li>
+                <li role="presentation"><a href="https://file.xiaokeduo.com/Order/OrderCorssSetting/">订单跨境</a></li>
+                <li role="presentation"><a href="https://file.xiaokeduo.com/Order/OrderPaySetting/">交易设置</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="set-switch pad30">
+        <strong>开启物流配送</strong>
+        <small class="mt5">启用后，买家下单可以选择快递发货，由你安排快递送货上门。<a href="https://www.xiaokeduo.com/help/2773.html" target="_blank" class="text-primary">查看【运费模版】使用教程</a></small>
+        <div class="switch-btn off" id="sw-IsLogisticsDistribution" ng-click="setLogisticsDistribution()" style="top: 30px;">
+            已关闭 <i></i>
+        </div>
+    </div>
+    <div class="form-horizontal">
+        <div class="nav-box mb20">
+            <div class="table-page clearfix">
+                <ul class="nav nav-tabs" role="tablist">
+
+                    <li role="presentation" ng-class="{&#39;active&#39;:Usertype==1 }"><a href="https://file.xiaokeduo.com/system/StoreAdmin/Clients/Freights/View/FreightTemplateList.html#/list/1">通用模板</a></li>
+                    <li role="presentation" ng-class="{&#39;active&#39;:Usertype==0}"><a href="https://file.xiaokeduo.com/system/StoreAdmin/Clients/Freights/View/FreightTemplateList.html#/list/0">高级模板</a></li>
+                </ul>
+            </div>
+ 
+            <div class="form-group mar forced">
+                <div class="checkbox" id="batchOp">
+                    <label><input class="mt8" type="checkbox" name="selall" id="selectAllInput" ng-click="SelectAll()">全选</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="btn resetSize btn-danger" name="lkbDeleteCheck" href="javascript:void(0)" ng-click="DeleteSelect()" id="lkbDeleteCheck" data-op="batchDelete">批量删除</a>　 |　
+                    <a href="https://file.xiaokeduo.com/system/StoreAdmin/Clients/Freights/View/FreightTemplateList.html#add/{{Usertype}}" class="btn  resetSize btn-primary" data-op="newFroghtTemplate">新建运费模板</a>
+                </div>
+            </div>
+
+            <div class="datalist">
+
+                <table class="table table-hover  table-bordered" ng-repeat="item in list" id="FreightTemplateList">
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="4">
+                                <label class="middle">
+                                    <input type="checkbox" name="CheckBoxGroup" value="{{item.Id}}" class="mr10" data-op="check" id="chk_template{{item.Id}}">{{item.Name}}<span class="ml20 colorb font12" ng-if="item.HasFree">包含指定包邮信息</span>
+                                    <span class="ml20 colorb font12" ng-if="item.FreeShip">全国包邮</span>
+                                </label>
+                            </th>
+                            <th scope="col" colspan="2" style="text-align:right;" id="op_{{item.Id}}">
+                                <a class="btn btn-info btn-xs" href="https://file.xiaokeduo.com/system/StoreAdmin/Clients/Freights/View/FreightTemplateList.html#edit/{{item.Id}}/{{Usertype}}" data-op="update">修改</a>
+                                <a class="btn btn-danger btn-xs" href="javascript:void(0);" ng-click="Delete(item.Id)" data-op="delete">删除</a>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-if="item.MUnit==1">
+                            <th width="90">运送方式</th>
+                            <th style="width: 500px">可运送至</th>
+                            <th width="100" class="alignc">首件(件)</th>
+                            <th width="100" class="alignc">运费</th>
+                            <th width="100" class="alignc">每增加(件)</th>
+                            <th width="100" class="alignc">增加运费</th>
+                        </tr>
+                        <tr ng-if="item.MUnit==2">
+                            <th width="90">运送方式</th>
+                            <th style="width: 500px">可运送至</th>
+                            <th width="100" class="alignc">重量(kg)</th>
+                            <th width="100" class="alignc">运费</th>
+                            <th width="100" class="alignc">每增加(kg)</th>
+                            <th width="100" class="alignc">增加运费</th>
+                        </tr>
+                        <tr ng-if="item.MUnit==3">
+                            <th width="90">运送方式</th>
+                            <th style="width: 500px">可运送至</th>
+                            <th width="100" class="alignc">体积(m<sup>3</sup>)</th>
+                            <th width="100" class="alignc">运费</th>
+                            <th width="100" class="alignc">每增加(m<sup>3</sup>)</th>
+                            <th width="100" class="alignc">增加运费</th>
+                        </tr>
+                        <tr ng-repeat="sub in item.NotFreeShippings">
+                            <td>{{GetModelName(sub.ModeId)}}</td>
+                            <td class="Regions" tabindex="{{sub.Id}}" data-trigger="focus" role="button" data-toggle="popover" data-container="body" data-placement="bottom" title="" data-content="" data-original-title="地址详情" ng-click="ShowPopover(sub.Id,sub.FreeShippingRegions)" ng-if="sub.FreeShippingRegions.length&gt;0">
+                                {{InitAreaOn(sub.FreeShippingRegions)}}
+                            </td>
+                            <td ng-if="sub.FreeShippingRegions.length&lt;=0">
+                                {{InitAreaOn(sub.FreeShippingRegions)}}
+                            </td>
+                            <td class="alignc">{{sub.FristNumber}}</td>
+                            <td class="alignc">{{sub.FristPrice |number : 2 }}&nbsp;元</td>
+                            <td class="alignc">{{sub.AddNumber}}</td>
+                            <td class="alignc">{{sub.AddPrice |number : 2 }}&nbsp;元</td>
+                        </tr>
+                        <tr ng-if="item.FreeShip">
+                            <td>快递</td>
+                            <td>全国</td>
+                            <td class="alignc">1</td>
+                            <td class="alignc">0元</td>
+                            <td class="alignc">1</td>
+                            <td class="alignc">0元</td>
+                        </tr>
+                        <!-- DATAITEM -end-->
+
+                    </tbody>
+                </table>
+            </div>
+    
+        </div>
+    </div>
+</div>
+</body></html>

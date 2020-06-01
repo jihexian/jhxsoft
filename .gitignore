@@ -38,10 +38,8 @@ web/storage/
 web/assets/
 web/admin/assets/
 .phpintel/
-web/
 seller/runtime/
 yjupgrade
-vendor/
 # env
 #.env
 seller/runtime/

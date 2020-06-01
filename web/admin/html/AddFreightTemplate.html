@@ -1,0 +1,98 @@
+
+<!-- saved from url=(0090)https://file.xiaokeduo.com/system/StoreAdmin/Clients/Freights/View/AddFreightTemplate.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><div ng-controller="AddController">
+    <form id="aspnetForm">
+        <div class="freight-template">
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-xs-2 control-label">模板名称：</label>
+                    <div class="col-xs-3">
+                        <input type="Text" id="templateName" name="templateName" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-xs-2 control-label">计价方式：</label>
+                    <div class="col-xs-3 setradiowidth" id="valuationmethod">
+                        <span>
+                            <input type="radio" value="1" name="pric" id="according" checked="checked" data-op="check">
+                            <label for="according">按件数</label>
+                        </span>
+                        <span>
+                            <input type="radio" value="2" name="pric" id="weigth">
+                            <label for="weigth">按重量</label>
+                        </span>
+                        <span ng-show="Usertype==0">
+                            <input type="radio" value="3" name="pric" id="volume">
+                            <label for="volume">按体积</label>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-xs-2 control-label">是否包邮：</label>
+                    <div class="col-xs-3 setradiowidth" id="whofreight">
+                        <span>
+                            <input type="radio" value="false" name="free" id="myfree" checked="checked" data-op="check">
+                            <label for="myfree">自定义运费</label>
+                        </span>
+                        <span>
+                            <input type="radio" value="true" name="free" id="hefree" data-op="check">
+                            <label for="hefree">卖家承担运费</label>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group clearm" id="shippertypeid">
+                    <label for="inputEmail3" class="col-xs-2 control-label">运送方式：</label>
+                    <div class="col-xs-10 setexit">
+                        <p>除指定地区外，其余地区的运费采用“默认运费”</p>
+                        <div class="select mt10">
+                            <p>
+                                <input type="checkbox" name="ShippingType" key="快递" value="1" id="express">
+                                <label for="express">快递</label>
+                            </p>
+                            <div class="freight-editor hidde mt10" style="width:100% !important;"></div>
+                        </div>
+                        <div class="select" ng-show="Usertype==0">
+                            <p>
+                                <input type="checkbox" name="ShippingType" key="EMS" value="2" id="ems">
+                                <label for="ems">EMS</label>
+                            </p>
+                            <div class="freight-editor hidde mt10" style="width:100% !important;"></div>
+                        </div>
+                        <div class="select" ng-show="Usertype==0">
+                            <p>
+                                <input type="checkbox" name="ShippingType" key="顺丰" value="3" id="sf">
+                                <label for="sf">顺丰</label>
+                            </p>
+                            <div class="freight-editor hidde mt10" style="width:100% !important;"></div>
+                        </div>
+                        <div class="select" ng-show="Usertype==0">
+                            <p>
+                                <input type="checkbox" name="ShippingType" key="平邮" value="4" id="mail">
+                                <label for="mail">平邮</label>
+                            </p>
+                            <div class="freight-editor hidde mt10" style="width:100% !important;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" id="freetypeid">
+                    <label class="col-xs-2 control-label"></label>
+                    <div class="col-xs-10">
+                        <div class="specified-condition">
+                            <p>
+                                <input type="checkbox" name="HasFree" value="快递" id="HasFree">
+                                <label for="HasFree">是否指定包邮（选填）</label>
+                            </p>
+                            <div class="specified-dis mt10"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-btn navbar-fixed-bottom" id="btnSaveTemplateModal">
+            <input type="hidden" id="Usertype" value="{{Usertype}}">
+            <button type="button" style="width: auto;" class="btn btn-primary" onclick="addTemplates()" id="btnSaveTemplate" name="btnSaveTemplate">保存模板信息</button>
+        </div>
+    </form>
+</div>
+
+</body></html>

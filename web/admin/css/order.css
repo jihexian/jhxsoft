@@ -1,0 +1,144 @@
+body{font-size: 12px}
+.order-container{
+	width: 85%;
+	margin:0 auto;
+	padding-bottom:80px; 
+}
+.list-item {
+	border-bottom:1px solid #eee;
+	padding-bottom:20px;
+}
+.list-item:last-child{
+	border-bottom: none;
+}
+.list-item h3{
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 15px;
+	border-left: 2px solid rgb(60, 141, 188);
+	margin-bottom: 20px;
+}
+.list-item label{
+	width: 100px;
+	text-align: right;
+	margin-right: 10px;
+	color: #999;
+}
+.list-item span{
+	color: #333;
+}
+.list-item .table tr th{
+	text-align: center;
+}
+
+.btn-box button{
+	padding:5px 12px;
+	margin-right: 10px;
+}
+.total{
+	text-align: right;
+}
+.print{
+	text-align: right;
+	margin-bottom: 12px;
+	margin-right: 15px;
+}
+.print a{
+	padding:5px 12px;
+}
+.change{
+	font-size: 10px;
+	color: #999 !important;
+	border:1px solid #f1f1f1;
+	display: inline-block;
+	padding:5px 8px;
+	border-radius: 3px;
+	margin-left: 8px;
+}
+
+.print-container{
+	width: 1000px;
+	margin:0 auto;
+	padding-bottom: 100px;
+}
+.print-container .title{
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+}
+.print-container .info,.product-info{
+	border-bottom: 1px solid #e6e6e6;
+}
+.print-container .info dl{
+	margin-bottom: 10px;
+}
+.print-container .info dt {
+    color: #999;
+    width: 100px;
+    text-align: right;
+    font-weight: normal;
+}
+.print-container .info dd{
+	min-width: 200px;
+}
+.print-container .info dt, .print-container .info dd {
+    font-size: 12px;
+    line-height: 20px;
+    vertical-align: top;
+    display: inline-block;
+}
+.print-box{
+	border:1px solid #e6e6e6;
+	margin:20px auto;
+	padding:20px 30px;
+}
+.product-info h3{
+	font-size: 12px;
+	font-weight: bold;
+}
+.product-info .total{
+	margin-bottom: 5px;
+}
+.p-box{width: 100%;}
+
+.width200{
+	width: 200px;
+}
+.form-group > label {
+    text-align: right;
+    line-height: 1.4;
+}
+
+.edit-box {
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+.edit-box tbody tr td:first-child{
+	width: 20%;
+	text-align: right;
+}
+.edit-box tbody tr td{
+	padding:20px 15px;
+}
+.edit-box .btn-box{
+	text-align: center;
+	margin-top:68px;
+}
+.edit-box input{
+	border-radius: 5px;
+}
+.edit-box small{
+	font-size: 10px;
+	color: #999;
+	margin-top: 5px;
+	display: block;
+}
+.width300{
+	width: 300px;
+}
+i.fa-print{
+	margin-right: 5px;
+}
+.edit h3,.edit a{
+	display: inline-block;
+}
