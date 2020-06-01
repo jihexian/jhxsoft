@@ -14,7 +14,6 @@ nbproject
 Thumbs.db
 
 # composer vendor dir
-vendor/
 web/storage/upload/
 web/assets/
 web/admin/assets
