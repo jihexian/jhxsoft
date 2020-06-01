@@ -154,16 +154,7 @@ use yii\helpers\Url;
 		</div>
 	</div>
 	<div class="goods-row2">
-		<div>
-			<p class="crred" id="goods_price" max='<?=$data['product']['max_price']?>' min='<?=$data['product']['min_price']?>' >￥<?=$data['product']['min_price']?></p>
-			<!-- <p>积分可抵现</p> -->
-         <div class="donation">
-         <?php if($data['product']['shop']['percent']): ?>
-              <p>捐赠<?=$data['product']['shop']['percent']*100?>%的扶贫基金</p>
-         <?php endif;?>
-     </div>
-               
-		</div>
+
 		<div class="goods-count">
 			<p>销量：<?=$data['product']['sale'];?></p>
 			<p id='goods_stock' data='<?=$data['product']['stock']?>'>库存：<?=$data['product']['stock']?></p>
@@ -181,45 +172,7 @@ use yii\helpers\Url;
 			<i class="iconfont icon-mulu1 cr999 btShow"></i>
 		</div>
 	</div>
- <!-- <div class="pintuan-info mgb20 bgf">
-    <div class="pintuan-title">开团记录</div>
-    <div class="pintuan-item">
-      <div class="pintuan-member">
-        <div><image src="http://www.yjshop.com/storage/upload/20190703/adOgSTESqPchf6T8T0FfnZ3x1IWT_SB-EB5ET_AF.png"></image></div>
-        <div><image src="http://www.yjshop.com/storage/upload/20190703/adOgSTESqPchf6T8T0FfnZ3x1IWT_SB-EB5ET_AF.png"></image></div>
-        <div><image src="http://www.yjshop.com/storage/upload/20190703/adOgSTESqPchf6T8T0FfnZ3x1IWT_SB-EB5ET_AF.png"></image></div>
-        <div><image src="http://www.yjshop.com/storage/upload/20190703/adOgSTESqPchf6T8T0FfnZ3x1IWT_SB-EB5ET_AF.png"></image></div>
-      </div>
-      <div>
-        <div class="need-people">还差<span>1人</span>成团</div>
-        <div class="laft-time" data-time="546">剩余<span class="hour1">00</span>:<span class="minute1">00</span>:<span class="second1">00</span></div>
-      </div>
-      <div>
-        <div class="pintuan-link"><a href="<?=Url::to(['product/pintuan-detail'])?>">去参团</a></div>
-      </div>
-    </div>
-    <div class="pintuan-item">
-      <div class="pintuan-member">
-        <div><image src="http://www.yjshop.com/storage/upload/20190703/adOgSTESqPchf6T8T0FfnZ3x1IWT_SB-EB5ET_AF.png"></image></div>
-        <div><image src="http://www.yjshop.com/storage/upload/20190703/adOgSTESqPchf6T8T0FfnZ3x1IWT_SB-EB5ET_AF.png"></image></div>
-        <div><image src="http://www.yjshop.com/storage/upload/20190703/adOgSTESqPchf6T8T0FfnZ3x1IWT_SB-EB5ET_AF.png"></image></div>
-        <div><image src="http://www.yjshop.com/storage/upload/20190703/adOgSTESqPchf6T8T0FfnZ3x1IWT_SB-EB5ET_AF.png"></image></div>
-      </div>
-      <div>
-        <div class="need-people">还差<span>1人</span>成团</div>
-        <div class="laft-time" data-time="54656">剩余<span class="hour2">00</span>:<span class="minute2">00</span>:<span class="second2">00</span></div>
-      </div>
-      <div>
-        <div class="pintuan-link"><a href="">去参团</a></div>
-      </div>
-    </div>
-    <div class="rule">
-      <div class="leader">规则</div>
-      <div><a href="">开团/参团-邀请好友-成团发货(不成团退款)</a></div>
-      <div><a href=""><icon class="iconfont icon icon-dayuhao"></icon></a></div>
-    </div>
-  </div>
- --> 
+ 
 
 	<div class="goods-row5 mgb20" id="comment-detail">
 
@@ -233,19 +186,7 @@ use yii\helpers\Url;
 			<i class="iconfont icon-dayuhao cr999"></i></label>
 		</div>
 	</div>
-	<!-- 店铺logo -->
-	<div class="goods-shop goods-row5 mgb20" >
-		<div class="weui-cell__hd shop-info" onclick="window.location.href='<?=Url::to(['/shop/index/','shop_id'=>$data['product']['shop']['id']])?>'">
-			<img src="<?=$data['product']['shop']['logo']?>" alt="">
-			<label ><?=$data['product']['shop']['name']?></label>
-		</div>
-	 	<div class="weui-cell__bd" style="display: flex;justify-content: flex-end;align-items: center;">
-      <?php if(!empty($data['product']['shop']['vrlink'])): ?>
-			<a target="_blank" href="<?=$data['product']['shop']['vrlink']?>" class="vr">店铺VR</a>
-      <?php endif;?>
-			<i onclick="window.location.href='<?=Url::to(['/shop/index/','shop_id'=>$data['product']['shop']['id']])?>'" class="iconfont icon-dayuhao cr999"></i>
-		</div>
-	</div>
+
 	<div class="goods-row6">
 		<div class="active">商品描述</div>
 		<!-- <div class="">规格参数</div> -->
