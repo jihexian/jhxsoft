@@ -24,13 +24,12 @@
 
 | 技术                    | 版本   | 说明                                    
 | ---------------------- | ------ | --------------------------------------- 
-| yii2                   | 2.1.6  | MVC核心框架                              
+| yii2                   | 2.0.35  | MVC核心框架                              
 | rabc                   | 2.1.5  | 认证和授权框架                           
 | mysql                  | 8.0    | 数据库                                   
 | php                    | 7.2    | 编程语言                              
-| yii2-queue             | 2.3    | 队列                                 
-
-
+| yii2-queue             | 2.3    | Yii2 Queue Extension which supported DB, Redis, RabbitMQ, Beanstalk, 
+| yii2-redis             | 2.0.13 | 队列                                  
 
 
 ## 部署教程
@@ -44,35 +43,35 @@ http://help.jihexian.com/
 
 ### 1. 后台基本设置
 
-![基本设置](https://gitee.com/wsyone/dashboard/attach_files/405335/download)
+![基本设置](https://gitee.com/wsyone/jhxsoft/blob/master/doc/images/base.jpg)
 
 ### 2. 商品发布
 
-![商品上架](https://gitee.com/wsyone/dashboard/attach_files/405336/download)
+![商品上架](https://gitee.com/wsyone/jhxsoft/blob/master/doc/images/goods_add.jpg)
 
 ### 3. 商品列表
 
-![商品列表](https://gitee.com/wsyone/dashboard/attach_files/405337/download)
+![商品列表](https://gitee.com/wsyone/jhxsoft/blob/master/doc/images/goods.jpg)
 
 ### 4. 应用插件
 
-![插件](https://gitee.com/wsyone/dashboard/attach_files/405338/download)
+![插件](https://gitee.com/wsyone/jhxsoft/blob/master/doc/images/plugin.jpg)
 
 ### 5. 模块管理
 
-![模块](https://gitee.com/wsyone/dashboard/attach_files/405339/download)
+![模块](https://gitee.com/wsyone/jhxsoft/blob/master/doc/images/module.jpg)
 
 ### 6. 订单管理
 
-![订单管理](https://gitee.com/wsyone/dashboard/attach_files/405343/download)
+![订单管理](https://gitee.com/wsyone/jhxsoft/blob/master/doc/images/order.jpg)
 
 ### 7. 统计分析
 
-![统计分析](https://gitee.com/wsyone/dashboard/attach_files/405344/download)
+![统计分析](https://gitee.com/wsyone/jhxsoft/blob/master/doc/images/tongji.jpg)
 
 ### 8. 小程序截图
 
-![小程序截图](https://gitee.com/wsyone/dashboard/attach_files/405356/download "小程序截图")
+![小程序截图](https://gitee.com/wsyone/jhxsoft/blob/master/doc/images/mini.jpg "小程序截图")
 
 
 
