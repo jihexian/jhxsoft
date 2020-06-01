@@ -57,52 +57,7 @@ use common\models\Nav as NavModel;
         </div>
         <!-- 广告区结束 -->
 
-        <!-- 扶贫商家 -->
-        <a href="<?=Url::to(['shop/lists'])?>" class="index-pro-category">
-            <div class="tit">扶贫商品</div>
-            <div class="more iconfont icon-dayuhao"></div>
-        </a>
-        <div id="list" class="list">
-            <div class="list-col-1">
-                <ul class="weui-row">
-                <?php foreach ($product as $v):?>
-
-                    <li>
-                       
-                             <a href="<?=Url::to(['product/detail','id'=>$v['product_id']])?>"  class="list-col1-item"><div class="item-pic"><img src="<?=count($v['image'])>0?$v['image'][0]['thumbImg']:Yii::$app->params['defaultImg']['default']?>" alt=""></div></a>
-                            <div class="item-txt">
-                               <a href="<?=Url::to(['product/detail','id'=>$v['product_id']])?>"><p class="name"><?=$v['name']?></p></a>
-                                <div class="shop">
-
-
-                                   <p class="shop-name"><?php echo $v['shop']['name'];?></p>
-                                   <p class="goshop"><a href="<?=Url::to(['shop/index','shop_id'=>$v['shop']['id']])?>">进店</a></p> 
-
-
-                                </div>
-                                <p class="price">￥<?=$v['min_price']?></p>
-                                <div class="item-txt-btm">
-                                  <div>
-                                    <?php if($v['shop']['is_village'] && $v['shop']['percent']): ?>
-                                        <p>捐赠<?=$v['shop']['percent']*100?>%的扶贫基金</p>
-                                    <?php endif;?>
-
-                                  </div>  
-                                   <a href="<?=Url::to(['product/detail','id'=>$v['product_id']])?>"  class="list-col1-item">
-                                  <span class="buy">立即购买</span>
-                                  </a>
-                                </div>
-                            </div>
-                      
-                    </li>
-                    <?php endforeach;?>
-               
-                </ul>
-            </div>
-        </div>
-
-
-        <!-- 商家end -->
+     
         <div class="list-tit">
             <div>新品上市</div>
         </div>

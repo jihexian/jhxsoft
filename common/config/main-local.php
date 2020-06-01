@@ -46,10 +46,10 @@ $config = [
         ],
    
     ],
-    'aliases' => [
+   /* 'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
-    ],
+    ],*/
 ];
 if (YII_ENV_DEV) {
 	// configuration adjustments for 'dev' environment
