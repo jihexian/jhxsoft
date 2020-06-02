@@ -12,13 +12,8 @@ nbproject
 
 # windows thumbnail cache
 Thumbs.db
-
-# composer vendor dir
-web/assets/
-web/admin/assets
 # composer itself is not needed
 composer.phar
-
 # Mac DS_Store Files
 .DS_Store
 .env
@@ -29,11 +24,7 @@ phpunit.phar
 
 # redis
 dump.rdb
-cache/*
 .phpintel/
-seller/runtime/
-yjupgrade
-
 plugins/alipayMobile/tmp/
 plugins/alipayMobile/log.txt
 composer.lock
