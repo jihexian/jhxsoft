@@ -14,12 +14,8 @@ nbproject
 Thumbs.db
 
 # composer vendor dir
-web/storage/upload/
 web/assets/
 web/admin/assets
-
-
-
 # composer itself is not needed
 composer.phar
 
@@ -33,16 +29,11 @@ phpunit.phar
 
 # redis
 dump.rdb
-cache/
-web/storage/
-web/assets/
-web/admin/assets/
+cache/*
 .phpintel/
 seller/runtime/
 yjupgrade
-# env
-#.env
-seller/runtime/
+
 plugins/alipayMobile/tmp/
 plugins/alipayMobile/log.txt
 composer.lock

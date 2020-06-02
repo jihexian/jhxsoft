@@ -45,15 +45,17 @@ http://help.jihexian.com/
 
 | 名称        | CPU    |  内存  |  硬盘  |  价格  |
 | --------    | -----:   | :----: | :----: | :----: |
-| 服务器(标准型S2机型 5M 双机)       | 2核      |   8G    |   50G    |   2970元/三年    |
-| MySQL高可用版| 1核      |   1G    |   100G    | 423元/三年    |
+| 服务器(标准型S2机型 5M 双机)       | 2核      |   8G    |   50G   
+| MySQL高可用版| 1核      |   1G    |   100G    | 
 
 | COS资源包     | 大小     |  价格     |
 | --------     | -----:   | :----:   |
 | 标准型存储容量 |200GB	  |1年	171元|
 | 下行流量      | 500GB	  |3个月	177元|
 
-[抢购地址：https://cloud.tencent.com](https://url.cn/JXnBEeOi)  
+[腾讯云：https://cloud.tencent.com](https://url.cn/JXnBEeOi) 
+
+[阿里云：https://www.aliyun.com](https://www.aliyun.com/minisite/goods?userCode=d1qihw5g)
 
 ## 相关截图
 
