@@ -127,7 +127,7 @@ class SiteController extends Controller
      * 
      * @return 昨日、今日、本周、年
      */
-    public function actionOrdercount(){
+    public function actionOrderCount(){
         $data=null;
         $oldtoday=strtotime(date('Y-m-d'),time());//今天零点时间戳
         $oneDayOrder = Order::find()
@@ -178,7 +178,7 @@ class SiteController extends Controller
     }
     
     public function actionMigration(){
-    	$migration = new MigrationLogic();
-    	echo $migration->m_member();
+        $migration = new MigrationLogic();
+        echo $migration->m_member();
     }
 }

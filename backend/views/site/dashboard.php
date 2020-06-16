@@ -40,19 +40,20 @@ $this->title = '控制面板';
     .div_left p{
         text-align: center;
         font-size: 15pt;
-        color: 	#4169E1;
+        color:  #4169E1;
     }
     .div_left li{
         float: left;
         list-style: none;
         margin-left: 110px;
-        margin-top: 40px;
+        margin-top: 2%;
         font-size: 10pt;
         font-weight: lighter;
     }
     .div_right1{
         height: 300px;
         width: 99%;
+        margin-top: 5%;
     }
     .div_right1 td{
         text-align: center;
@@ -74,6 +75,7 @@ $this->title = '控制面板';
     }
     .tableshop{
         margin-top: 10px;
+        width: 99%;
     }
     .table{
         height: 100%;
@@ -87,31 +89,115 @@ $this->title = '控制面板';
     margin-top: 3px;
     margin-right: 5px;
     }
-    .tb_body table{
-      width: 98%;
+    .right_td{
+    width: 35%;
+    }
+     .left_td{
+    width: 65%;
+    }
+    .bgcolor{
+    background-color: #fff;
+    }
+    .bgcolor1{
+    background-color: #fff;
+    width: 100%;
+    height: 92px;
+    }
+    .bgcolor2{
+    background-color: #fff;
+    width: 100%;
+    height: 184px;
     }
 </style>
 <div class="site-index">
 
+<div class="row">
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-aqua">
+            <div class="inner">
+              <h3><?=$totleMoney?></h3>
+
+              <p>订单总金额（元）</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-bag"></i>
+            </div>
+            <a href="#" class="small-box-footer"><!-- <i class="fa fa-arrow-circle-right"></i> --></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-green">
+            <div class="inner">
+              <h3><?=$groundProduct ?></h3>
+
+              <p>已商品发布（个）</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-stats-bars"></i>
+            </div>
+            <a href="#" class="small-box-footer"><!-- <i class="fa fa-arrow-circle-right"></i> --></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-yellow">
+            <div class="inner">
+              <h3><?= $countOrder ?></h3>
+
+              <p>订单总数（条）</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-person-add"></i>
+            </div>
+            <a href="#" class="small-box-footer"><!-- <i class="fa fa-arrow-circle-right"> --></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-red">
+            <div class="inner">
+              <h3><?=$saleTotle ?></h3>
+
+              <p>本月销量（笔）</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-pie-graph"></i>
+            </div>
+            <a href="#" class="small-box-footer"><!-- <i class="fa fa-arrow-circle-right"></i> --></a>
+          </div>
+        </div>
+        
+   <!--      <div class="col-lg-2 col-xs-6">
+
+          <div class="small-box bg-orange">
+            <div class="inner">
+              <h3><?$finshOrder?></h3>
+
+              <p>已完成交易（次）</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-pie-graph"></i>
+            </div>
+            <a href="#" class="small-box-footer"><i class="fa fa-arrow-circle-right"></i> </a>
+          </div>
+        </div> -->
+        <!-- ./col -->
+      </div>
+
     <table class="table table-bordered">
-      <thead>
-        <tr class="head">
-          <th scope="col"><p><img src="<?=Url::to(['/ioc/yinshou.png']) ?>"><?=$totleMoney?></p>今日订单总金额（元）</th>
-          <th scope="col"><p><img src="<?=Url::to(['/ioc/product.png']) ?>"><?=$groundProduct ?></p>已商品发布（个）</th>
-          <th scope="col"><p><img src="<?=Url::to(['/ioc/order.png']) ?>"><?= $countOrder ?></p>订单总数（条）</th>
-          <th scope="col"><p><img src="<?=Url::to(['/ioc/hudong.png']) ?>"><?=$saleTotle ?></p>本月销量（笔）</th>
-          <th scope="col" colspan="2" style="width: 40%;"><p><img src="<?=Url::to(['/ioc/oder_sucess2.png']) ?>"><?=$finshOrder ?></p>已完成交易</th>
-        </tr>
-      </thead>
-      <tbody>
         <tr class="tb_body">
-          <th scope="row" colspan="4" rowspan="3">
+          <td class="left_td" scope="row">
             <table>
                 <tr>
                     <td>
                         <div class="div_left">
                             <div><div class="yuan"></div>店铺及商品提示<font>您需要关注的店铺信息以及待处理事项</font></div>
-                            <div>
+                            <div class="bgcolor1">
                                 <ul>
                                     <li><p><?=$groundProduct ?></p>出售中</li>
                                     <!-- <li><p>0</p>仓库中</li>
@@ -127,7 +213,7 @@ $this->title = '控制面板';
                     <td>
                         <div class="div_left">
                         <div><div class="yuan"></div>交易提示<font>您需要立即处理的交易订单</font></div>
-                            <div>
+                            <div class="bgcolor2">
                                 <ul>
                                     <li><p><?=$noPayOder ?></p>待付款</li>
                                     <li><p><?=$noSenOrder?></p>待发货</li>
@@ -158,13 +244,13 @@ $this->title = '控制面板';
                 </tr>
                  <tr>
                     <td>
-                     <div style="margin-top:0px; width:100%;height:368px;" id="echartmain"></div>
+                     <div class="bgcolor" style="margin-top:0px; width:100%;height:368px;" id="echartmain"></div>
                     </td>
                 </tr>
           </table>
-          </th>
+          </td>
 
-          <td rowspan="3">
+          <td class="right_td">
               <div class="div_right1">
                 <div><div class="yuan"></div>销售情况统计<font>按周期统计商家店铺的订单量和订单金额</font></div>
                 <table class="table tableshop">
@@ -223,7 +309,6 @@ $this->title = '控制面板';
 
           </td>
         </tr>
-      </tbody>
     </table>
 </div>
 
@@ -231,7 +316,7 @@ $this->title = '控制面板';
   window.onload = function (){
   var echartsArray=new Array();
        $.ajax({
-            url: 'ordercount',
+            url: 'order-count',
             type: 'post',
             data :{},
             beforeSend: function (xhr) {
@@ -242,7 +327,7 @@ $this->title = '控制面板';
                    echartsArray.push(data[i]);
                 }
                  echart(echartsArray);
-			}
+      }
       });
        
    }
