@@ -65,7 +65,7 @@ class SiteController extends Controller
             $totleMoney+=$po['pay_amount'];//计算总金额
         }
         $checkoutOder = Order::find()->andWhere(['is_shop_checkout'=>1])->count();//已给商家打款
-        $groundProduct = Product::find()->andWhere(['status'=>1])->count();//上架商品数量
+        $groundProduct = Product::find()->andWhere(['status'=>1,'is_del'=>0])->count();//上架商品数量
         
         $pageData = new ProductSearch();
         $product = $pageData->rankProduct();//找出商品排名数据
